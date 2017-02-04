@@ -17,8 +17,8 @@
 			dots: false,
 			slide: '.ba-team__slide',
 			slidesToShow: 3,
-			prevArrow: '.ba-slider-arrow--prev',
-			nextArrow: '.ba-slider-arrow--next',
+			prevArrow: '.ba-slider2-arrow--prev',
+			nextArrow: '.ba-slider2-arrow--next',
 			responsive: [
 			    {
 			      breakpoint: 800,
