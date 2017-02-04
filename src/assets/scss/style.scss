@@ -1,0 +1,260 @@
+
+.button{
+	border: 1px solid #7D7A7C;
+	max-width: 196px;
+}
+.ba-hero{
+	background: $primary-color url('../img/hero.jpg') 50% no-repeat;
+	background-size: cover;
+	padding: 32px 0 515px;
+	&__menu{
+		background: transparent;
+		ul{
+			background: transparent;
+			padding: 30px 0;
+			li{
+				a{
+					color: $white;
+					text-transform: uppercase;
+					font-family: $header-font-family;
+					font-weight: $header-font-weight;
+				}
+			}
+		}
+	}
+	&__info{
+		padding-top: 280px;
+		text-align: center;
+		color: $white;
+		h1{
+			font-weight: 700;
+			text-transform: uppercase;
+		}
+		p{
+			font-style: italic;
+			font-size: 30px;
+		}
+	}
+}
+.ba-about{
+	padding: 122px 0;
+	&__img{
+		position: relative;		
+	}
+	&__imgoverlay{
+		position: absolute;
+		width: 100%;
+		top: 13%;
+		left: 0;
+		img{
+			display: block;
+			margin: 0 auto;
+			padding-bottom: 30px;
+		}
+		h2{
+			text-align: center;
+			color: $white;
+			text-transform: uppercase;
+		}
+	}
+	&__info{
+			padding: 70px 0 100px 125px;
+			p:last-of-type{
+				margin-bottom: 80px;
+			}
+			span{
+				font-weight: 700;
+				}
+			a{
+				display: block;
+				margin: 0 auto;
+			}
+		}
+}
+.ba-align-middle{
+	display: flex;
+	-webkit-align-items: middle;
+	        align-items: middle;
+}
+.ba-services{
+	&__block{
+		text-align: center;
+		padding: 95px 0 138px;
+		h3{
+			margin-top: 20px;
+			text-transform: uppercase;
+		}
+		p{
+			max-width: 80%;
+			margin: 0 auto;
+		}
+		&--graphic, &--mobile{
+			background: #DBDBDB;
+		}
+	}
+	&__bigblock{
+		background: #C3C0DA url('../img/service.jpg') 50% no-repeat;
+		background-size: cover;
+		height: 100%;
+		padding: 106px 0 300px;
+		text-align: center;
+		color: $white;
+		h2{
+			margin: 25px 0 110px;
+			text-transform: uppercase;
+		}
+		p{
+			max-width: 80%;
+			margin: 0 auto;
+		}
+	}
+}
+.ba-works{
+	padding: 44px 0 57px;
+	text-align: center;
+	background: $primary-color url('../img/works.jpg') 50% no-repeat;
+	background-size: cover;
+	
+	h2{
+		text-transform: uppercase;
+		color: $white;
+		margin-bottom: 50px;
+	}
+	&__slide{
+		outline: none;
+		border: none;
+		
+		img{
+			margin: 0 auto;
+		}
+	}
+	&__slider{
+		.ba-slider-arrow{
+			z-index: 10;
+			font-size: 18px;
+			cursor: pointer;
+			position: absolute;
+			top: 50%;
+			
+			&--prev{
+				left: 0;
+			}
+			&--next{
+				right: 0;
+				margin-left: 0;
+			}
+		}
+		.slick-dots{
+		    text-align: center;
+			width: 100%;
+			padding: 0;
+			bottom: -40px;
+			margin: 0;
+		    list-style: none;
+		    display: block;
+		    position: absolute;
+		    li {
+		        display: inline-block;
+				height: 12px;
+				width: 12px;
+				border-radius: 50%;
+				background: transparent;
+				border: 2px solid #fff;
+				margin: 0 5px;
+				vertical-align: middle;
+				transition: transform .2s ease-in, border .2s ease-in;
+				&:hover, &:active{
+					background: $white;
+					transform: scale(1.8);
+					cursor: pointer;
+				}
+				&.slick-active{
+					background: $white;
+					&:hover{
+						transform: none;
+					}
+				}
+		        button {
+		            display: none;
+        		}
+    		}
+		}
+    }
+}
+.ba-team{
+	background: #EBEBEB;
+	padding: 48px 0 90px;
+	h2{
+		text-transform: uppercase;
+		text-align: center;
+	}
+	&__slider{
+		.ba-slider-arrow{
+			z-index: 10;
+			font-size: 18px;
+			cursor: pointer;
+			position: absolute;
+			top: 50%;
+			
+			&--prev{
+				left: -5%;
+			}
+			&--next{
+				right: -5%;
+				margin-left: 0;
+			}
+		}
+	}
+	&__slide{
+		display: inline-block;
+		outline: none;
+		border: none;
+	}
+	&__block{
+		text-align: center;
+		background: #FFF;
+		position: relative;
+		margin: 190px 15px 0;
+		img{
+			transform: translateY(-50%);
+			margin: 0 auto;
+		}
+		
+		span{
+			display: block;
+			margin-top: -50px;
+		}
+	}
+	&__name{
+		text-transform: uppercase;
+		font-family: $header-font-family;
+		color: $primary-color;
+		font-size: 24px;
+	}
+	&__icons{
+		background: $primary-color;
+		margin-top: 70px;
+		i{
+			color: $white;
+			margin: 0 12px;
+		}
+	}
+
+}
+.ba-footer{
+	background: $primary-color;
+	padding: 66px 0 80px;
+	color: $white;
+	&__icons{
+		i{
+			background: #FFF;
+			border-radius: 50%;
+			padding: 5px;
+		}
+	}
+}
+
+
+
+
+
